@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sujal sethi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+</body>
+</html>
+
+<body>
+    <div id="header"> 
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <!-- <i class="fa-solid fa-bars"></i> -->
+            </nav>
+            <div class="header-text">
+                <p>Data Science Asspirant</p>
+                <h1>Hey, I'm <span>Sujal</span> Sethi</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>An enthusiastic fresher with highly motivated and leadership skills pursuing bachelors of
+                        engineering degree in Computer Science from PIET. I have acquired expertise in C++, Python
+                        libraries, FrontEnd and Data Science. I have also actively participated in hackathons, innothon
+                        and mapathon. Good in communication as well as can work under pressure. I am an ambitious and
+                        hard-working person, looking to kickstart my career in an esteemed organisation and incorporate
+                        my skills, to get an opportunity where I can make the best of my potential and contribute to the
+                        organisation's growth</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Core Coding</span><br> C++(Advance) | C | Python</li>
+                            <li><span>Data Science</span><br> Python libraries | Machine Learning |
+                                Tableau | Ms-Excel</li>
+                            <li><span>Database</span><br>MySql</li>
+                            <li><span>Front-end</span><br>Html | CSS | Javascript</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>CellStrat</span><br> Training and Internship program after the end of 4th Sem.
+                            </li>
+                            <li><span>Aicte</span><br> Training in ML, DL ,IOT</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Class 10th</span><br> 93% [CBSE Board]</li>
+                            <li><span>Class 12th</span><br>97% PCM [CBSE Board]</li>
+                            <li><span>B-Tech</span><br>Panipat Institute of Engineering & Technology.</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==================services============== -->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <h2>Sales Analysis</h2>
+                    <p>Tableau helps organizations to collaborate and uncover insights 
+                        by providing interactive visualizations for huge amounts of data.
+                    In this project we build the sales dashboard for Superstore in which we can see 
+                the visualizations/graph between the (sales and profit , sales by market , sales for country)</p>
+                    <a href="https://public.tableau.com/app/profile/sujal.sethi/viz/Samplesalesanalysisbysujal/Samplesalesdashboard">Learn more</a>
+                </div>
+                <div>
+                    <!-- <i class="fa-solid fa-cricket-bat-ball"></i> -->
+                    <i class="fa-solid fa-database"></i>
+                    <h2>IPL Matches visualization 2008-2020</h2>
+                    <p>The dataset consist of data about IPL matches played from the year 2008 to 2020. 
+                        IPL is a professional Twenty20 cricket league founded by the Board of Control for 
+                        Cricket in India (BCCI) in 2008. The league has 8 teams representing 8 different 
+                        Indian cities or states. Analysis of IPL through stats which include Matches won by particular team , 
+                        Top 10 venue , Top 10 MoM award winner.</p>
+                    <a href="https://github.com/sujalsethi44/IPL-Matches-visualization-2008-2020">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Car price prediction</h2>
+                    <p>This to difficult sometimes to predict the resale vakue of any
+                        vehicle, so we take example of car data including owner
+                        details, original price, fuel type and pridict the best price by
+                        applying the NLP with different classification algorithm.</p>
+                    <a href="https://github.com/sujalsethi44/Car-price-prediction">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-skull-crossbones"></i>
+                    <h2>Fake News detection</h2>
+                    <p>The consume news through several mediums throughout the
+                        day in our daily routine, but sometimes it becomes difficult to
+                        decide which one is fake and which one is authentic.To get
+                        the accurately classified news, we build a ML project using
+                        NLP.</p>
+                    <a href="https://github.com/sujalsethi44/Fake-news-prediction">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <h2>Movie Review</h2>
+                    <p>The project is Movies Reviews Sentiment Analysis who
+                        classify that the given review about the movie is a positive
+                        review or a negative review.In this we use different algorithm
+                        to have the better accuracy for our model.</p>
+                    <a href="https://github.com/sujalsethi44/Movies_Review_Classification_NLP">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-copy"></i>
+                    <h2>Duplicate Question predictor</h2>
+                    <p>We build a model in which it basically predict where the two
+                        inputed question are similar or not, it's an quora challenge few
+                        years ago. We bring the solution on the basis of bag of words
+                        and tfid usage, it's an ML DL project.</p>
+                    <a href="https://github.com/sujalsethi44/duplicate-question-detector">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==========================portfolio================ -->
+    <div id="profile">
+        <div class="container">
+                <h1 class="sub-title">My Profile</h1>
+                <div class="profile-list">
+                    <div class="profile">
+                        <img src="GitHub-Mark.png">
+                        <div class="layer">
+                            <h3>Work Profile</h3>
+                            <a href="https://github.com/sujalsethi44"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <img src="linkedin.webp">
+                        <div class="layer">
+                            <h3>Job Profile</h3>
+                            <a href="https://www.linkedin.com/in/sujalsethi44/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <img src="Instagram.webp">
+                        <div class="layer">
+                            <h3>Social Media</h3>
+                            <a href="https://www.instagram.com/sujal_sethi__/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                       </div>
+                    </div>
+               </div>
+               <a href="#" class="btn">See More</a>
+        </div>       
+    </div>
+
+    <!-- ===============================contact=================== -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> sujalsethi12344@gmail.com</p>
+                <p><i class="fa-solid fa-address-book"></i>  08869819865</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/sujal.sethi.92"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/SujalSethi44"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="Black White Modern Resume (2).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit"class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">
+                    
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-solid fa-heart-pulse"></i>  Made by SUJAL SETHI</p>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/ba53288749.js" crossorigin="anonymous"></script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <script>
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby-DBlUfL5rLLUWamGWT-jcHBQMNp5KzbJurMg80NpxX6BW5ctj0CeHT83AuepIC29gKw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
