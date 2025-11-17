@@ -83,12 +83,13 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Programming Languages</span><br> C++, Python, Latex</li>
-                            <li><span>Computer Science</span><br> Data Structures and Algorithms, Object-Oriented Programming (OOP)</li>
-                            <li><span>BI Tools</span><br> Tableau, Power BI</li>
-                            <li><span>Database Language</span><br> MS SQL Server, MySQL</li>
-                            <li><span>Soft Skills</span><br> Project Management, Analytical Skill, Teamwork, Leadership</li>
-                            <li><span>Emerging Technologies</span><br> Generative AI, Large Language Models (LLM), Agentic Framework, Retrieval-Augmented Generation (RAG)</li>
+                            <li><span>Programming Languages</span><br> C++, Python, SQL</li>
+                            <li><span>Computer Science</span><br> Data Structures and Algorithms, Object-Oriented Programming (OOP), SDLC</li>
+                            <li><span>Database Technologies</span><br> MS SQL Server, Snowflake</li>
+                            <li><span>Cloud and AI Services</span><br> Azure OpenAI, Azure Document Intelligence, Azure Cognitive Services</li>
+                            <li><span>Tech Frameworks</span><br> Generative AI, Large Language Models (LLM), Agentic Framework, Retrieval-Augmented Generation (RAG), Swagger, Rest API</li>
+                            <li><span>Soft Skills</span><br> Project Management, Analytical Skills, Teamwork, Leadership, Problem Solving</li>
+                            <li><span>Emerging Technologies</span><br> AI-driven Solutions, Document Intelligence, Chatbot Development, RAG-based Applications</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
@@ -151,22 +152,30 @@
 <!-- ==================services============== -->
 <div id="project">
     <div class="container">
-        <h1 class="sub-title">My Projects</h1>
+        <h1 class="sub-title">Projects</h1>
         <div class="project-list">
 
-            <!-- Basket 1: GEN AI JUBIL ASSISTANT -->
+            <!-- Basket 1: MedClaimAI -->
+            <div class="project-item" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <i class="fa-solid fa-hospital"></i>
+                <h2>MedClaimAI</h2>
+                <p>AI-powered system automating EOB-to-ERA conversion for medical billing with Azure Document Intelligence and GPT models.<br>
+                Technologies: LLM, Azure OpenAI, RAG, Azure Cognitive Search.</p>
+            </div>
+
+            <!-- Basket 2: GEN AI JUBIL ASSISTANT -->
             <div class="project-item" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
                 <i class="fa-solid fa-robot"></i>
                 <h2>GEN AI JUBIL ASSISTANT</h2>
-                <p>Developed a web application for non-tech users to input prompts and generate SQL queries, table outputs, and dynamic visualizations. <br>
-                Technologies: LLM, OpenAI, Snowflake, LIDA, Azure App Services.</p>
+                <p>Web app enabling non-tech users to generate SQL queries and dynamic visualizations via prompts.<br>
+                Technologies: LLM, OpenAI, Snowflake, LIDA.</p>
             </div>
 
             <!-- Basket 2: GEN AI DOCUMENT SEARCH -->
             <div class="project-item" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
                 <i class="fa-solid fa-file-alt"></i>
                 <h2>GEN AI DOCUMENT SEARCH</h2>
-                <p>Created a web app to process and understand documents, allowing users to ask questions and receive accurate, contextually relevant answers.<br>
+                <p>Document processing web app providing contextually relevant answers to user queries.<br>
                 Technologies: Python, LLM, OpenAI, Azure App Services.</p>
             </div>
 
@@ -213,9 +222,9 @@
 
 /* Project item styling */
 .project-item {
-    width: 30%;
-    margin: 10px;
-    padding: 20px;
+    width: 22%;
+    margin: 5px;
+    padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -279,7 +288,7 @@
 <!-- ==========================portfolio================ -->
 <div id="profile">
     <div class="container">
-        <h1 class="sub-title">My Profile</h1><br>
+        <h1 class="sub-title">Profile</h1><br>
         <div class="cube-container">
             <div class="cube">
                 <!-- GitHub Profile -->
@@ -334,8 +343,8 @@
 
     .cube-container {
         perspective: 1000px;
-        width: 300px;
-        height: 300px;
+        width: 320px;
+        height: 320px;
         margin: 0 auto;
     }
 
@@ -346,60 +355,93 @@
         position: relative;
         transform-style: preserve-3d;
         transition: transform 1s ease-in-out;
+        animation: autoRotate 20s infinite linear;
+    }
+
+    @keyframes autoRotate {
+        from {
+            transform: rotateY(0deg) rotateX(5deg);
+        }
+        to {
+            transform: rotateY(360deg) rotateX(5deg);
+        }
     }
 
     .face {
         position: absolute;
         width: 300px;
         height: 300px;
-        background: rgba(255, 255, 255, 0.9);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(240, 240, 255, 0.95));
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
+        box-shadow: 0 8px 32px rgba(255, 0, 79, 0.3), 0 0 20px rgba(109, 93, 255, 0.2);
+        border-radius: 50%;
+        border: 3px solid rgba(255, 0, 79, 0.3);
+        backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
     }
 
     /* Face positioning for 3D effect */
     .face1 {
-        transform: rotateY(0deg) translateZ(150px);
+        transform: rotateY(0deg) translateZ(160px);
     }
     .face2 {
-        transform: rotateY(90deg) translateZ(150px);
+        transform: rotateY(120deg) translateZ(160px);
     }
     .face3 {
-        transform: rotateY(180deg) translateZ(150px);
+        transform: rotateY(240deg) translateZ(160px);
     }
 
     /* Cube hover effect */
     .cube:hover {
-        transform: rotateY(360deg);
+        animation-play-state: paused;
+    }
+
+    .face:hover {
+        box-shadow: 0 12px 48px rgba(255, 0, 79, 0.5), 0 0 30px rgba(109, 93, 255, 0.4);
+        border-color: rgba(255, 0, 79, 0.6);
+        border-width: 4px;
     }
 
     /* Icon and text styling */
     .face img {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         margin-bottom: 15px;
+        border-radius: 50%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+    .face img:hover {
+        transform: scale(1.1) rotate(5deg);
     }
 
     .face h3 {
-        font-size: 1.5em;
+        font-size: 1.3em;
         margin-bottom: 10px;
-        color: black; /* Add this line for black color */
+        color: #1a1a1a;
+        font-weight: 600;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .face a {
-        background-color: #ff004f;
-        padding: 10px 15px;
+        background: linear-gradient(135deg, #ff004f, #ff3366);
+        padding: 10px 20px;
         color: #fff;
         text-decoration: none;
-        border-radius: 5px;
+        border-radius: 25px;
+        box-shadow: 0 4px 15px rgba(255, 0, 79, 0.3);
+        transition: all 0.3s ease;
+        font-weight: 500;
     }
 
     .face a:hover {
-        background-color: #0056b3;
+        background: linear-gradient(135deg, #6d5dff, #8b7dff);
+        box-shadow: 0 6px 20px rgba(109, 93, 255, 0.4);
+        transform: translateY(-2px);
     }
 
     /* Responsive adjustments */
@@ -417,7 +459,13 @@
 
     /* Ensure there is space between profile and contact sections */
     #profile {
-        margin-bottom: 100px; /* Adjust this value to control the space */
+        margin-bottom: 200px; /* Increased space to prevent contact section overlap */
+        padding-bottom: 50px;
+    }
+
+    /* Hide See More button on mobile */
+    #profile .btn {
+        display: none;
     }
 
     #contact {
